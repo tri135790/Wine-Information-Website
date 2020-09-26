@@ -1,0 +1,38 @@
+ 
+<!-- ----- debut de la page cave_acceuil -->
+<?php include '../view/fragment/fragmentCaveHeader.html'; ?>
+<body>
+  <div class="container">
+    <?php
+    include '../view/fragment/fragmentCaveMenu.html';
+    ?>
+    <div class ='panel panel-danger'>
+        <div class="panel-heading"><h4><b>Erreur "call stack" de la variable constante DEBUG dans le fichier config.php</b></h4></div>
+        <div class="panel-body"> 
+            <h4>Détail de l'erreur: </h4>
+            <p>Lorsqu'on rappelle plus de deux fois le fichier config.php, la variable DEBUG va etre redéfinie, il rélève donc l'erreur "call stack"</p>
+            <h4>Solution: </h4>
+            <p>Créer un fichier debug.php où la variable se déclare, puis mettre require_one 'debug.php' à la place de la déclaration de cette variable dans le fichier config.php</p>
+        </div>
+    </div>
+    <div class ='panel panel-success'>
+        <div class="panel-heading"><h4><b>Amélioration de la représentation de recherche de ViewId</b></h4></div>
+        <div class="panel-body"> 
+            <h4>Détail du changement: </h4>
+            <p>Les pages de ViewId dans le fichier producteur et vin  sont maintenant capables d'afficher le résultat recherché sans charger une autre page qui l'affiche </p>
+            <h4>Solution: </h4>
+            <p>Ajouter une partie de JS pour sauvegarder la liste des vin ($results) à une variable de JS (table), puis afficher en fonction de la choix de l'utilisateur</p>
+            <p class="bg-danger text-white">Cette amelioration ne fonction que pour le tp13_mvc1</p>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <?php
+    include '../view/fragment/fragmentCaveFooter.html';
+    ?>
+<!-- ----- fin de la page cave_acceuil -->

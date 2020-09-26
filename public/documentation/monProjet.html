@@ -1,0 +1,34 @@
+ 
+<!-- ----- debut de la page cave_acceuil -->
+<?php include '../view/fragment/fragmentCaveHeader.html'; ?>
+<body>
+  <div class="container">
+    <?php
+    include '../view/fragment/fragmentCaveMenu.html';
+    ?>
+    
+    <div class ='panel panel-success'>
+        <div class="panel-heading"><h4><b>Originalite de mon projet</b></h4></div>
+        <div class="panel-body"> 
+            <h4>Détail du  5 fonctionalités de Projet </h4>
+            <p>Fonction 1 : Liste des recoltes - Il s'agit d'une fonction basique mais essentielle qui permet d'aficher un tableau recolte complet avec 3 attributs : producteur_id,vin_id,quantite </p>
+            <p>Fonction 2 : Liste des vins et producteurs par quantite - permettre à l'utilisateur d'entrer une quantité minimale et maximale, puis filtrer tous les ids des producteurs et les vins selon les quantités choisis</p>
+            <p>Fonction 3 : Sélection le liste des producteurs par id de vin - permettre à l'utilisateur de choisir un ID de vin, puis afficher tous les ids des producteurs qui ont produit ce vin </p>
+            <p>Fonction 4 : Liste des vins produit par un producteur - permettre à l'utilisateur de choisir un ID de producteur, puis afficher tous les ids des vins que ce producteur a produit </p>
+            <p>Fonction 5 : Insertion d'un recolte - permettre à l'utilisateur de saisir un nouveau recolte </p>
+            <h4>Explication du choix de 5 fonctionalités </h4>
+            <p>J'ai choisi 5 fonctionalités parce que je souhaite manipuler avec tous 3 attributs de table Recolte ( producteur_id,vin_id,quantite)  </p>
+            <p>les deux fonctions 3 et 4 montrent egalement le rôle de table Recolte dans la liaison des 2 tables Vin et Producteur </p>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <?php
+    include '../view/fragment/fragmentCaveFooter.html';
+    ?>
+<!-- ----- fin de la page cave_acceuil -->
